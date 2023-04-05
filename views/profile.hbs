@@ -1,0 +1,83 @@
+<head>
+      <script type="text/javascript" src="/js/editprofile.js"></script> {{!-- new --}}
+</head>
+<body>
+      {{> sidebar}}
+
+      <div id="user-page-container">
+      <div id="user-page-header">
+            <span>USER PROFILE</span>
+      </div>
+      <div id="user-page-body">
+            <div id="user-info">
+                  <div id="user-profile">
+                        {{#if picture}}
+                        <img src="/save-photos/{{picture}}" alt="Profile Picture" id="user-picture">
+                        {{else}}
+                        <img src="../images/default-profile.jpg" alt="Profile Picture" id="user-picture">
+                        {{/if}}
+                        <hr>
+
+                        
+
+                        <p id="username">{{username}}</p>
+                  </div>
+
+                  <div id="upload-image-div">
+                        <form action="/profile" id="upload-image" enctype="multipart/form-data" method="POST">
+                              <input type="file" name ="image" id="uploaded-image" accept="image/png, image/jpg">
+                              <button type="submit" id="submit-pic" disabled="true">SUBMIT PHOTO</button> 
+                        </form>
+                  </div>
+
+                  <div class="edit-button">
+                              <button id="picBtn" type="button">Edit Picture</button>
+                  </div>
+
+                  <div id="user-description">
+                        <p>About</p>
+                        <div id="description-box">
+                              <p id="description-text">
+                              {{profileDesc}}
+                              </p>
+                        </div>
+                  </div>
+
+                  <div class="edit-button">
+                        <button id="editBtn" type="button">Edit Profile</button>
+                  </div>
+
+                  <div class="edit-text">
+                        <p id="editText"></p>
+                  </div>
+      
+            </div>
+
+            <div id="user-activities">
+                  <div class="user-tabs post">
+                  <div class="user-tabs-title">
+                        <span>Recent Posts</span>
+                        <a href="/view-posts/{{username}}">view all...</a>      
+                  </div>
+
+                  {{#each recentpost}}
+                        {{> recentpost this}}
+                  {{/each}}
+
+                  </div>
+
+                  <div class="user-tabs comments">
+                  <div class="user-tabs-title">
+                        <span>Comments</span>
+                        <a href="/view-comments/{{username}}">view all...</a>
+                              
+                  </div>
+                  {{#each recentcomment}}
+                        {{>recentcomment this}}
+                  {{/each}}
+                  </div>
+
+            </div>
+      </div>
+      </div>        
+</body>

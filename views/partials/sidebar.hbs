@@ -1,0 +1,60 @@
+<head>
+    <script type="text/javascript" src="/js/search.js"></script>
+</head>
+<div id="sidebar">
+    <div id="sidebar_container">
+        <div id="user_container" class="icon_container">
+            <a href="/profile"><p id="nav_user" class="nav_icon"></p></a>
+            <p class="nav_text">USER</p>
+
+            <!--        <div id="user_container" class="icon_container"> -->
+        </div>
+    
+        <div id="nav_center">
+            <div class="icon_container">
+                <div id="nav_search" class="nav_icon"></div>
+                <p class="nav_text">SEARCH</p>
+            </div>
+
+            <form id="search-sidebar-container">
+                <input class="search-bar" type="text" placeholder="Search..." > 
+                <button type="button" id="sidebar_search" class="sidebar-search"></button>
+            </form>
+
+            <div class="icon_container">
+                <a href="/home"><p class="nav_icon" id="nav_home"></p></a>
+                <p class="nav_text">HOME</p>
+            </div>
+
+            <div class="icon_container">
+                <a href="/genre"> <p class="nav_icon" id="nav_genre"></p></a>
+                <p class="nav_text">GENRE</p>
+            </div>
+    
+            <div class="icon_container">
+                <a href="/forum"><p id="nav_forum" class="nav_icon"></p></a>
+                <p class="nav_text">FORUM</p>
+            </div>
+
+            <div class="icon_container">
+                <a href="/about"><p id="nav_about">?</p></a>
+                <p class="nav_text">ABOUT</p>
+            </div>
+
+            <div class="icon_container">
+                <form action="/logout" method="POST">
+                    <button type="submit" name="loginpageBtn" id="loginpageBtn">Logout</button>
+                </form>
+                
+                <p class="nav_text">LOGOUT</p>
+            </div>
+            
+        </div>
+    
+        <div id="create_container" class="icon_container">
+            {{!-- <button type="button" class="collapsible"></button> --}} 
+                <a href="/create"><p id="nav_create" class="nav_icon"></p></a>
+                    <p class="nav_text">CREATE</p>
+        </div>
+    </div>  
+</div>

@@ -1,0 +1,72 @@
+#create-post-container{
+    margin-left: 175px;
+    margin-right: 125px;
+}
+
+#create-post-header{
+    margin: 50px;
+}
+
+#create-post-header > span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#create-post-body{
+    margin: auto;
+    background-color: var(--foreground1);
+    width: 75%;
+}
+
+#create-post-body > div{
+    margin: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#display-image{
+    width: 70%;
+    height: 100%;
+}
+
+
+#first-row, #second-row{
+    display: inline-flex;
+}
+
+#create-post, #create-title, #choose-game, #create-content, #upload-image{
+    display: flex;
+    flex-direction: column;
+}
+
+#create-title{
+    margin-left: 10%;
+    width: 38.5%;
+}
+
+#create-content{
+    margin-left: 10%;
+    width: 60%;
+}
+
+#post-content{
+    resize: none;
+}
+
+#create-content{
+    resize: none;
+}
+
+#choose-game, #upload-image{
+    margin-left: 20%;
+}
+
+#submission-button{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#create-post-body > #error-text{
+    font-size: 20px;
+}

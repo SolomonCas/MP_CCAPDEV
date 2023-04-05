@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --primary: #56d0ae;
+    --background: #09051e;
+    --foreground1: rgba(37, 46, 54, 0.6);
+    --foreground2: rgba(35, 46, 52, 0.6);
+    --foreground3: rgba(37, 50, 47, 0.6);
+    --maintext: #ffff;
+    --postbox: #CFD0D5;
+    --postaccent: #252238;
+}
+
+body {
+    background: url('/images/bgimg.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--maintext);
+    background-color: var(--background);
+    margin: 0;
+}
+
+a {
+    color:var(--maintext);
+}
+
+a:visited {
+    color: gray;
+}
+
+#game-page-header{
+    margin: 50px;
+    display: flex;
+}
+
+#game-page-name{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#eldenring-wallpaper{
+    background: url('../images/eldenring_wallpaper.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#apex-wallpaper{
+    background: url('../images/apex_wallpaper.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#loginpageBtn {
+    margin-top: 20px;
+    width: 70%;
+    height: 100%;
+    color: var(--maintext);
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#valorant-wallpaper{
+    background: url('../images/valorant_wallpaper.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#fortnite-wallpaper{
+    background: url('../images/fornite_wallpaper.jpg') no-repeat;
+    
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#odyssey-wallpaper{
+    background: url('../images/odyssey.jpg') no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+#home-page-container{
+    margin: auto;
+    background-color: var(--foreground1);
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-header{
+    display: flex;
+    flex-direction: row;
+    margin: 70px 100px;
+    place-content: end space-between;
+    align-items: center;
+}
+
+#home-header > span {
+    font-size: 75px;
+    font-weight: bold;
+}
+ 
+#home-header > input {
+    margin-left: 200px;
+    height: 20px;
+    width: 300px;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid var(--primary);
+}
+
+#home_search, #sidebar_search{
+    background-position: 2px -20px;
+}
+
+.home-search{
+    background: url('/images/sidebar_icons.png') no-repeat;
+    background-size: 62px 42px;
+    width: 25px;
+    height: 25px;
+    border-radius: 18px;
+    background-color: var(--primary);
+    border:none;
+    position: absolute;
+    left: 77%;
+}
+
+.sidebar-search{
+    background: url('/images/sidebar_icons.png') no-repeat;
+    background-size: 62px 42px;
+    width: 25px;
+    height: 25px;
+    border-radius: 18px;
+    background-color: var(--primary);
+    border:none;
+    position: absolute;
+    top: 8px;
+    left: 82%;
+}
+
+#home-search-bar{
+    border-radius: 15px;
+}
+
+.home-pages{
+    padding-bottom: 25px;
+}
+
+.home-pages > p{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#trending-games{
+    background-color: var(--foreground2);
+}
+
+#latest-games{
+    background-color: var(--foreground3);
+}
+
+
+.games{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: row;
+    overflow: auto;
+    padding: 20px;
+}
+
+.game-logo{
+    border-radius: 25px;
+    border: 1px solid var(--primary);
+    height: 130px;
+    width: 231px;
+    margin-right: 30px;
+}
+
+.game-logo:hover{
+    transform: scale(1.1);
+}
+
+#sidebar {
+    position: fixed;
+    background-color: var(--primary);
+    width: 75px;
+    height: 100vh;
+    top: 0;
+    z-index: 5;
+}
+
+#sidebar_container {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.icon_container {
+    padding: 10px;
+}
+
+.nav_icon {
+    background: url('/images/sidebar_icons.png') no-repeat;
+    background-size: 126px 84px;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+#nav_user {
+    background-position: -5px -5px;
+}
+
+#nav_search {
+    background-position: -5px -47px;
+}
+
+#search-sidebar-container {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    display: none;
+}
+
+#search-sidebar-container > .search-bar {
+    border-radius: 0px 0px 0px 0px;
+    border: 5px solid var(--primary);
+    border-left: 0px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;;
+    padding: 3px;
+}
+
+
+#nav_home {
+    background-position: -47px -48.5px;
+}
+
+#nav_genre {
+    background-position: -48px -6px;
+}
+
+#nav_forum {
+    background-position: -90px -6px;
+}
+
+#nav_about {
+    color: var(--maintext);
+    background-color: var(--background);
+    width: 32px;
+    margin-left: 11px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav_create {
+    background-position: -89px -47px;
+}
+
+.nav_text {
+    margin: 0px;
+    font-size: 10px;
+    color: var(--background);
+}
+
+#create_container {
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.icon_container:hover {
+    opacity: 70%;
+}
+
+.post-box{
+    background-color: rgb(226, 225, 225);
+    height: 75px;
+    font-size: 15.5px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    color: #09051e;
+    margin-bottom: 10px;
+}
+
+.post-content{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.post-content > p{
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.post-date{
+    font-size: 9.1px;
+    margin-top: 45px;
+}
+
+.post-date > span{
+    display: block;
+}
+
+.post-link{
+    color: #09051e;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+/*Follow button for Delicated Game Pages and Post*/
+
+#follow-button, #follow-button-post{
+    align-self: flex-end;
+    width: 80px;
+    height: 30px;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    color: var(--maintext);
+    background-color: #17132a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#follow-button:hover, #follow-button-post:hover{
+    transform: scale(1.05);
+}
+
+.follow-post-container{
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+#npm-packages , #programmers-list {
+    padding-left: 5%;
+}

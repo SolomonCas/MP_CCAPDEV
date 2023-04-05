@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/login.css">
+    <script type="text/javascript" src="/js/signup.js"></script>
+</head>
+<body>
+    <div id="user-page-container">
+        <div id="user-page-header">
+            <span>LOG-IN / SIGNUP</span>
+        </div>
+
+        <div class="login">
+            <h3> SIGNUP </h3>
+            <form id="signup" action="/signup" method="post">
+                <label>Username:</label>
+                <input name="username" type="text" id="signup_uname">
+                <label>Email: </label>
+                <input name="email" type="email" id="email">
+                <label> Password: </label>
+                <input name="password" type="password" id="pass1">
+                <label> Confirm Password: </label>
+                <input name="confirmpass" type="password" id="pass2">
+                <button id="signupBtn" type="button">Sign-Up</button>
+            </form>
+            <p id="signupErrorFields"></p>
+            <p id="signupErrorEmail"></p>
+            <p id="signupErrorUser"></p>
+            <p id="signupErrorPassword"></p>
+            <p>Have an account already? <a href="/login">Login!</a></p>
+        </div>
+    </div>
+</body>

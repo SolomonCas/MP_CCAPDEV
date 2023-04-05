@@ -1,0 +1,354 @@
+#forum-page-container {
+    margin: auto;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+#forum-page-header {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#forum-page-header > span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.forum-post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    background-color: var(--postbox);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#Post-page{
+    background-color: rgba(37, 50, 47, 0.6);
+    
+}
+
+.top-bar {
+    background-color: var(--postaccent);
+    top: 0px;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    place-content: end space-between;
+}
+
+.top-bar > .game-post {
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.game-post > span {
+    font-size: 15px;
+}
+
+.game-post-user{
+    font-size: 15px;
+    color: var(--maintext);
+}
+
+.post-title {
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.forum-post-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+}
+
+.post-image{
+    resize: both;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.forum-post > .bottom-bar {
+    background-color: var(--postaccent);
+    height: 50px;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.bottom-bar > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bottom-bar > div > p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.upvote {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 64px;
+    height: 38px;
+    object-fit: none;
+    object-position: -10px -23px;
+    transform: scale(0.6);
+}
+
+.downvote {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 64px;
+    height: 38px;
+    object-fit: none;
+    object-position: -94px -23px;
+    transform: scale(0.6);
+}
+
+.comment {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 52px;
+    height: 50px;
+    transform: scale(0.7);
+}
+
+.upvote:hover, .downvote:hover, .comment:hover {
+    opacity: 70% !important;
+}
+
+a.post-title-link:link {
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--maintext);
+
+}
+
+a.post-title-link:visited {
+    color: grey;
+}
+
+a.post-title-link:hover {
+    opacity: 60%;
+}
+
+/* CSS FOR POSTS */
+
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--postbox);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.post-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.post-bar-img {
+    margin: 50px auto 50px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-actions {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: #2D293D;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.post-description {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 25px;
+    align-items: center;
+    background-color: rgba(35, 37, 46, 0.6);
+    overflow: auto;
+}
+
+.post-description > span {
+    text-align: justify;
+    display: block;
+    width: 85%;
+    padding-left: 50px;
+}
+
+.comment-input-container {
+    margin: auto;
+    display: flex;
+    width: 93%;
+    flex-direction: column;
+
+}
+
+.comment-input-container > #comment-input-box {
+    resize: none;
+    margin: 15px 0px 15px 0px;
+    height: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--maintext);
+    border: 4px solid white;
+    background-color: var(--postaccent);
+    padding: 10px;
+}
+
+.comment-input-container > #comment-input-box::placeholder{
+    color: var(--maintext);
+    opacity: 1;
+}
+
+.comment-input-container > #post-comment {
+    align-self: flex-end;
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    color: var(--maintext);
+    background-color: #17132a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comment-input-container > #post-comment:hover {
+    transform: scale(1.05);
+}
+
+.comments-container {
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.comments-title{
+    background-color: #17132a;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.comment-box{
+    background-color: #2d293d;
+    height: 50px;
+    font-size: 15.5px;
+    display: flex;
+    border: 0.5px solid;
+    border-color: #17132a;
+}
+
+.comment-author {
+    width: 50px;
+    height: 20px;
+}
+.comment-author > .comment-author-link {
+    margin-left: 10px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.comment-author-link:link {
+    color:white;
+}
+
+.comment-author-link:visited {
+    color:grey;
+}
+
+.comment-author:hover {
+    opacity:50%;
+}
+
+.comment-content > p {
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+
+    align-self: left;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.comment-date{
+    font-size: 9.1px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.comment-date > span{
+    display: block;
+}
+
+.edit-button {
+    align-self: center;
+    color: var(--maintext);
+    padding-top: 20px;
+}
+.edit-button > #frEditBtn {
+    border: 0px;
+    color: var(--maintext);
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#frDeleteBtn {
+    border: 0px;
+    color: var(--maintext);
+    background-color: var(--postaccent);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    align-self: center;
+    display: none;
+}
+
+.edit-button > #frEditBtn:hover, #frDeleteBtn:hover {
+    transform: scale(1.05);
+}

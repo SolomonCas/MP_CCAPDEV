@@ -1,0 +1,16 @@
+    <body>
+        {{> sidebar}}
+
+<div id="forum-page-container">
+            <div id="forum-page-header">
+                <span>Recents Comments</span>
+            </div>
+
+            <div class ="home-pages">
+                {{#each recentcomment}}
+                        {{>recentcomment this}}
+                {{/each}}
+                
+            </div>
+        </div>        
+    </body>

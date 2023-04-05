@@ -1,0 +1,54 @@
+
+<body>
+        {{> sidebar}}
+
+<div id="create-post-container">
+            <div id="create-post-header">
+                <span>CREATE A POST</span>
+            </div>
+            <div id="create-post-body">
+                <div>
+                    CREATE
+                </div>
+                <form action="/create" id="create-post" enctype="multipart/form-data" method="POST">
+                    <div id="first-row">
+                        <div id="create-title">
+                            <label for="title">Title</label>
+                            <input type="text" name="postTitle" id="post-title">
+                        </div>
+                        <div id="choose-game">
+                            <label for="game">Game</label>
+                            <select id="selected-game" name="game">
+                                <option value="Apex Legends"> Apex Legends </option>
+                                <option value="Elden Ring"> Elden Ring </option>
+                                <option value="Fortnite"> Fortnite </option>
+                                <option value="Mario Odyssey"> Mario Odyssey </option>
+                                <option value="Valorant"> Valorant </option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="second-row">
+                        <div id="create-content">
+                            <label for="post-content">Description</label>
+                            <textarea name="postDesc" id="post-content" cols="30" rows="10"></textarea>
+                        </div>
+                        
+                        
+                        <div id="upload-image">
+                            <label for="image">Attach Image</label>
+                            <input type="file" name="image" id="uploaded-image" accept="image/png, image/jpg"  onchange="loadFile(event)">
+                            <img id="display-image">
+                        </div>
+                    </div>
+                    
+                    <div id="submission-button">
+                        <button type="submit" id="submit-button" disabled="true">CREATE</button> 
+                    </div>
+                </form>
+                <div id="error-text">
+                    {{error}}
+                </div>
+            </div>
+        </div>
+    </body>

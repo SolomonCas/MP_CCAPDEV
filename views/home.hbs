@@ -1,0 +1,28 @@
+<body>
+    {{> sidebar}}
+
+    <div id="home-page-container">
+        <form id="home-header">
+            <span>HOME</span>
+            <input id="home-search-bar" type="text" placeholder="Search anything here...">
+            <button type="button" id="home_search" class="home-search"></button>
+        </form>
+        <div id="trending-games" class="home-pages">
+            <p>Trending Games</p>
+            <div class="games">
+                <a href="/page/valorant"><img class="game-logo" src="/images/valorant.jpg" /></a>
+                <a href="/page/apexlegends"><img class="game-logo" src="/images/apex.jpg" /></a>
+                <a href="/page/fortnite"><img class="game-logo" src="/images/fortnite.jpg" /></a>
+                <a href="/page/eldenring"><img class="game-logo" src="/images/eldenring.jpg" /></a>
+            </div>
+        </div>
+        
+        <div id="latest-post" class="home-pages">
+            <p>Latest Post</p>
+            {{#each posts}}
+                {{>postbox this}} 
+            {{/each}}
+        </div>
+    </div>
+</body>
+        

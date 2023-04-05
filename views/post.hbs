@@ -1,0 +1,75 @@
+ <head>
+    <script type="text/javascript" src="/js/comments.js"></script>
+    <script type="text/javascript" src="/js/editpost.js"></script>
+ </head>
+    <body id={{background}}>
+        {{> sidebar}}
+        
+         <div id="forum-page-container">
+            <div id="forum-page-header">
+                <span>POSTS | {{game}}</span>
+            </div>
+
+            <!-- POST -->
+            <div class="post" id="Post-page">
+                <div class="top-bar">
+                    <p class="game-post">Game | {{game}}<span><br>Posted by: <a href="/profile/{{username}}">{{username}}</a>; On: {{postDate}}</span></p>
+                    <a class= "post-title-link" href= ""><p class="post-title" id="post-postTitle">{{postTitle}}</p></a>
+                </div>
+
+                <div class="post-body">
+                  {{#if image}}
+                    <div class="post-bar-img">
+                        <div class="post-actions">
+                            <img src="../images/forum_icons.png" class="upvote" id="upvoteIcon" />
+                            <span class="vote-count" id="post-vote-count">{{vote}}</span>
+                            <img src="../images/forum_icons.png" class="downvote" id="downvoteIcon" />
+                        </div>
+                        <img class="post-image" src="/save-photos/{{image}}" />
+                    </div>
+
+
+                  {{else}}
+                        <div class="post-bar-img">
+                        </div>
+                        <div class="post-actions">
+                            <img src="../images/forum_icons.png" class="upvote" id="upvoteIcon" />
+                            <span class="vote-count" id="post-vote-count">{{vote}}</span>
+                            <img src="../images/forum_icons.png" class="downvote" id="downvoteIcon" />
+                        </div>
+                  
+                  {{/if}}
+
+                    <div class="post-description">
+                        <span id="post-description-text">{{postDesc}}</span>
+                        <!-- IDK what to do for this -->
+                        <div class="tags-container">
+                            <p id="tags">
+                                <a href="" id="postID">#{{postid}}</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="edit-button">
+                    <button id="frEditBtn" type="button">Edit Post</button>
+                    <button id="frDeleteBtn" type="button">Delete Post</button>
+                </div>
+
+                <div class="comment-input-container">
+                    <textarea id="comment-input-box" placeholder="Add a Comment..."></textarea>
+                    <button id="post-comment" type="button">Post Comment</button>
+                </div>
+
+
+                <div class ="comments-container">
+                    <div class="comments-title">
+                        <span> Comments </span>
+                    </div>
+                    {{#each commentbox}}
+                        {{>commentbox this}}
+                    {{/each}}
+                </div>
+            </div> 
+        </div>
+    </body>

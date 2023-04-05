@@ -1,0 +1,32 @@
+<div class="forum-post">
+    <div class="top-bar">
+        <div class="game-post">
+            <div>
+                Game | {{game}}
+            </div>
+            <span>Posted by: </span> <a href="/profile/{{username}}" class="game-post-user">{{username}}</a>
+            <span>; On: {{postDate}}</span> 
+        </div>
+        <a class="post-title-link" href= "/post/{{postid}}"><p id="{{postid}}" class="post-title">{{postTitle}}</p></a>
+        
+    </div> 
+    {{#if image}}                
+    <div class="forum-post-body">
+        <img src="/save-photos/{{image}}" class="post-image"/>
+    </div>
+
+    {{else}}
+    <div class="forum-post-body">
+        <img src="{{image}}" class="post-image"/>
+    </div>
+    {{/if}}
+    <div class="bottom-bar">
+        <div>        
+            <img src="../images/forum_icons.png" class="upvote" id="ForumUpvoteIcon"/>
+            <p class="vote-count" id="post-vote-count">{{vote}}</p>
+            <img src="../images/forum_icons.png" class="downvote" id="ForumDownvoteIcon"/>
+            <a href="/post/{{postid}}"><img src="../images/comment-icon.png" class="comment" id="ForumCommentIcon" /></a>
+            <p class="comment-count">{{commentNo}}</p>
+        </div>
+    </div>
+</div>

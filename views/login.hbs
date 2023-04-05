@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/login.css">
+    <!-- <script type="text/javascript" src="/js/login.js"></script> -->
+</head>
+
+<body>
+
+    <div id="user-page-container">
+        <div id="user-page-header">
+            <span>LOG-IN / SIGNUP</span>
+        </div>
+
+        <div class="login">
+            <h3> LOGIN </h3>
+            <form id="login" action="/login" method="POST">
+                <label>Username:</label>
+                <input name="username" type="text" id="login_uname">
+                <label> Password: </label>
+                <input name="password" type="password" id="login_password">
+                <button id="loginBtn" type="submit">Login</button>
+            </form>
+            {{#if message}}
+                <p id="loginError">{{message}}</p>
+            {{/if}}
+            <p>Don't have an account yet? <a href="/signup">Signup!</a></p>
+        </div>
+    </div>
+</body>

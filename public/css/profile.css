@@ -1,0 +1,236 @@
+#user-page-container{
+    margin-left: 175px;
+    margin-right: 125px;
+}
+
+#user-page-header{
+    margin: 50px;
+}
+
+#user-page-header > span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#user-page-body{
+    background-color: #26594b;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#user-info{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+#username{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#user-profile, #description-box{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#user-profile > hr{
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#user-picture {
+    border-radius: 120px;
+    height: 250px;
+    width: 250px;
+}
+
+.user-link{
+    color: var(--maintext);
+}
+
+#user-description > p{
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#description-box{
+    width: 60%;
+    height: 250px;
+    border: 2px solid;
+}
+
+#description-text{
+    margin-top: 0px;
+    padding: 10px;
+}
+
+#user-activities{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-tabs{
+    margin-top: 35px;
+    width: 90%;
+}
+
+.user-tabs-title{
+    background-color: #17132a;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.user-tabs-title > a{
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--maintext);
+}
+
+.profile-box{
+    background-color: #2d293d;
+    font-size: 15.5px;
+    height: 50px;
+    display: flex;
+    border: 0.5px solid;
+    border-color: #17132a;
+}
+
+.profile-box > img{
+    border-radius: 25px;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+}
+
+.user-link > span{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.recent-post-content{
+    width: 85%;
+}
+
+.recent-post-content > div{
+    margin-top: 0px;
+    margin-left: 15px;
+    overflow:hidden;
+    height: 15.5px;
+}
+
+.recent-post-date{
+    margin-top: 20px;
+    font-size: 9.1px;
+}
+
+.recent-post-date > span{
+    display: block;
+}
+
+.recent-comment-content{
+    width: 85%;
+}
+
+.recent-comment-content > p{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+
+    overflow:hidden;
+    height: 20px;
+}
+
+.recent-comment-date{
+    font-size: 9.1px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.recent-comment-date > span{
+    display: block;
+}
+
+.user-post-link{
+    color: var(--maintext);
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.following-tabs{
+    display: inline-block;
+}
+
+.game-following{
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--primary);
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.game-following:hover{
+    transform: scale(1.1);
+}
+
+.edit-button {
+    align-self: center;
+    color: var(--maintext);
+    padding-top: 20px;
+}
+
+.edit-button > #editBtn, #picBtn, #submit-pic{
+    border: 0px;
+    color: var(--maintext);
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.edit-button > #editBtn:hover, #picBtn:hover, #submit-pic:hover {
+    transform: scale(1.05);
+}
+
+.edit-text {
+    align-self: center;
+    color: var(--maintext);
+}
+.edit-text > #editText {
+    color: maroon;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#upload-image-div {
+    display: none;
+    color: var(--maintext);
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+#upload-image-div > form{
+    margin: auto;
+    align-items: center;
+}
+
+#profile-uploaded-image { 
+    align-self: center;
+    color: var(--maintext);
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10%;
+    width: 80%;
+}

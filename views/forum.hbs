@@ -1,0 +1,15 @@
+
+    <body>
+        {{> sidebar}}
+
+<div id="forum-page-container">
+            <div id="forum-page-header">
+                <span>FORUMS | Latest Posts</span>
+            </div>
+            <div id="forum-body">
+                {{#each items}}
+                    {{> forumpost this}}
+                {{/each}}
+            </div>
+        </div>        
+    </body>
